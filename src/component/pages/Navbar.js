@@ -1,79 +1,36 @@
-import { BsPerson, BsBook, BsFile, BsTelephone } from "react-icons/bs";
-import { GoHome } from "react-icons/go";
-import { Routes, Route, Link } from "react-router-dom";
+import { Routes, Route, Link, useLocation } from "react-router-dom";
 
 import Home from "./Home";
 import About from "./About";
 import Experience from "./Experience/Experience";
 import Project from "./Project";
 import Contact from "./Contact";
-import { useState } from "react";
+
+import { navlist } from "../datas/NavList";
+// import { useState } from "react";
 
 function Navbar() {
-  const [active, setActive] = useState("/");
+  // const [active, setActive] = useState("/");
+  const location = useLocation();
 
   return (
     <div>
       <div className="relative z-[999]">
         <div className="nav-menu">
           <ul className="flex mx-auto gap-1">
-            <Link
-              to="/"
-              className={
-                active === "/" ? "nav-menu-item menu-active" : "nav-menu-item"
-              }
-              onClick={() => setActive("/")}
-            >
-              <GoHome />
-            </Link>
-
-            <Link
-              to="/about"
-              className={
-                active === "/about"
-                  ? "nav-menu-item menu-active"
-                  : "nav-menu-item"
-              }
-              onClick={() => setActive("/about")}
-            >
-              <BsPerson />
-            </Link>
-
-            <Link
-              to="/experience"
-              className={
-                active === "/experience"
-                  ? "nav-menu-item menu-active"
-                  : "nav-menu-item"
-              }
-              onClick={() => setActive("/experience")}
-            >
-              <BsBook />
-            </Link>
-
-            <Link
-              to="/project"
-              className={
-                active === "/project"
-                  ? "nav-menu-item menu-active"
-                  : "nav-menu-item"
-              }
-              onClick={() => setActive("/project")}
-            >
-              <BsFile />
-            </Link>
-
-            <Link
-              to="/contact"
-              className={
-                active === "/contact"
-                  ? "nav-menu-item menu-active"
-                  : "nav-menu-item"
-              }
-              onClick={() => setActive("/contact")}
-            >
-              <BsTelephone />
-            </Link>
+            {navlist.map((item, index) => (
+              <Link
+                to={item.route}
+                key={index}
+                className={
+                  item.route === location.pathname
+                    ? "nav-menu-item menu-active"
+                    : "nav-menu-item"
+                }
+              >
+                {item.icon}
+              </Link>
+            ))}
           </ul>
         </div>
       </div>
