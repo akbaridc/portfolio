@@ -16,6 +16,10 @@ import vasilissaImg1 from "./Vasilissa/1.PNG";
 import vasilissaImg2 from "./Vasilissa/2.PNG";
 import vasilissaImg3 from "./Vasilissa/admin.PNG";
 
+import wmsImg1 from "./wms/1.PNG"
+import wmsImg2 from "./wms/2.PNG"
+import wmsImg3 from "./wms/3.PNG"
+
 export {
   ekitirImg1,
   ekitirImg2,
@@ -31,4 +35,7 @@ export {
   vasilissaImg1,
   vasilissaImg2,
   vasilissaImg3,
+  wmsImg1,
+  wmsImg2,
+  wmsImg3
 };

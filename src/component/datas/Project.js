@@ -3,6 +3,7 @@ import {
   jemberArImg1,
   laravelBlogImg1,
   vasilissaImg1,
+  wmsImg1
 } from "../../assets/images/index";
 
 import { GoLinkExternal } from "react-icons/go";
@@ -30,18 +31,22 @@ export const projects = [
       {
         name: "PHP",
         color: "bg-slate-400",
+        icon: "devicon-php-plain"
       },
       {
         name: "Codeigniter",
         color: "bg-red-500",
+        icon: "devicon-codeigniter-plain"
       },
       {
         name: "Javascript",
         color: "bg-yellow-500",
+        icon: "devicon-javascript-plain"
       },
       {
         name: "Bootstrap",
         color: "bg-violet-600",
+        icon: "devicon-bootstrap-plain"
       },
     ],
   },
@@ -66,10 +71,12 @@ export const projects = [
       {
         name: "Java",
         color: "bg-orange-400",
+        icon: "devicon-java-plain"
       },
       {
         name: "Javascript",
         color: "bg-yellow-500",
+        icon: "devicon-javascript-plain"
       },
     ],
   },
@@ -94,14 +101,17 @@ export const projects = [
       {
         name: "PHP",
         color: "bg-slate-400",
+        icon: "devicon-php-plain"
       },
       {
         name: "Laravel",
         color: "bg-red-600",
+        icon: "devicon-laravel-plain"
       },
       {
         name: "Bootstrap",
         color: "bg-violet-600",
+        icon: "devicon-bootstrap-plain"
       },
     ],
   },
@@ -126,18 +136,62 @@ export const projects = [
       {
         name: "PHP",
         color: "bg-slate-400",
+        icon: "devicon-php-plain"
       },
       {
         name: "Codeigniter",
         color: "bg-red-500",
+        icon: "devicon-codeigniter-plain"
       },
       {
         name: "Javascript",
         color: "bg-yellow-500",
+        icon: "devicon-javascript-plain"
       },
       {
         name: "Bootstrap",
         color: "bg-violet-600",
+        icon: "devicon-bootstrap-plain"
+      },
+    ],
+  },
+  {
+    name: "Warehouse System Management",
+    img: wmsImg1,
+    description:
+      "Website untuk memanage barang stok keluar / masuk, opname gudang, koreksi stok, mutasi stok",
+    sources: [
+      {
+        name: "link",
+        link: null,
+        icon: <FaCode />,
+      },
+      {
+        name: "source",
+        link: null,
+        icon: <GoLinkExternal />,
+      },
+    ],
+    stack: [
+      {
+        name: "PHP",
+        color: "bg-slate-400",
+        icon: "devicon-php-plain"
+      },
+      {
+        name: "Codeigniter",
+        color: "bg-red-500",
+        icon: "devicon-codeigniter-plain"
+      },
+      {
+        name: "Javascript",
+        color: "bg-yellow-500",
+        icon: "devicon-javascript-plain"
+      },
+      {
+        name: "Bootstrap",
+        color: "bg-violet-600",
+        icon: "devicon-bootstrap-plain"
       },
     ],
   },
