@@ -15,7 +15,7 @@ const ModalsImg = ({
   return (
     <>
       <div>
-        <div className="overlay" onClick={handleClick}>
+        <div className="overlay">
           <img src={clickImg} alt="bigger" />
           <button
             type="button"

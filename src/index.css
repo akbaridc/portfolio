@@ -69,6 +69,10 @@ html {
   backdrop-filter: blur(5px);
 }
 
+.blurDiv {
+  background: rgba(27, 27, 27, 0.541);
+}
+
 .overlay {
   @apply fixed top-0 left-0 right-0 w-full h-full flex items-center z-[9999] backdrop-blur-sm;
   background: rgba(27, 27, 27, 0.541);

@@ -14,11 +14,11 @@ import laravelBlogImg2 from "./laravelBlog/2.PNG";
 
 import vasilissaImg1 from "./Vasilissa/1.PNG";
 import vasilissaImg2 from "./Vasilissa/2.PNG";
-import vasilissaImg3 from "./Vasilissa/admin.PNG";
+import vasilissaImg3 from "./Vasilissa/3.PNG";
 
-import wmsImg1 from "./wms/1.PNG"
-import wmsImg2 from "./wms/2.PNG"
-import wmsImg3 from "./wms/3.PNG"
+import wmsImg1 from "./wms/1.PNG";
+import wmsImg2 from "./wms/2.PNG";
+import wmsImg3 from "./wms/3.PNG";
 
 export {
   ekitirImg1,
@@ -37,5 +37,5 @@ export {
   vasilissaImg3,
   wmsImg1,
   wmsImg2,
-  wmsImg3
+  wmsImg3,
 };
