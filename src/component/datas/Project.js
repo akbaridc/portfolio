@@ -16,6 +16,8 @@ import {
   wmsImg1,
   wmsImg2,
   wmsImg3,
+  lalasia1,
+  lalasia2,
 } from "../../assets/images/index";
 
 import { GoLinkExternal } from "react-icons/go";
@@ -45,12 +47,12 @@ export const projects = [
       "Website ini untuk mengetahui silsilah dari burung perkutut, user bisa menambahkan data burung, data kandang, data anakan dan lain sebagainya",
     sources: [
       {
-        name: "link",
+        name: "Link",
         link: "https://ekitir.com/",
         icon: <FaCode />,
       },
       {
-        name: "source",
+        name: "Source",
         link: null,
         icon: <GoLinkExternal />,
       },
@@ -98,12 +100,12 @@ export const projects = [
       "App untuk mengetahui wisata yang ada di kota Jember yang terintegrasi teknologi Augmented Reality, sehingga dalam pencarian lokasi lebih mudah dan lebih nyata",
     sources: [
       {
-        name: "link",
+        name: "Link",
         link: null,
         icon: <FaCode />,
       },
       {
-        name: "source",
+        name: "Source",
         link: null,
         icon: <GoLinkExternal />,
       },
@@ -135,12 +137,12 @@ export const projects = [
       "Website ini hasil belajar laravel dari youtube channel WPU playlist Laravel 8, tampilan belum diubah masih real seperti divideo",
     sources: [
       {
-        name: "link",
+        name: "Link",
         link: "https://www.youtube.com/playlist?list=PLFIM0718LjIWiihbBIq-SWPU6b6x21Q_2",
         icon: <FaCode />,
       },
       {
-        name: "source",
+        name: "Source",
         link: "https://www.github.com/akbaridc/laravelBlog",
         icon: <GoLinkExternal />,
       },
@@ -173,19 +175,19 @@ export const projects = [
         source: vasilissaImg2,
       },
       {
-        source: vasilissaImg2,
+        source: vasilissaImg3,
       },
     ],
     description:
       "Website semi Ecommerce yang memperjualkan produk kecantikan dari brand lokal sendiri, bisa mendaftar menjadi member untuk mendapatka diskon harga produk",
     sources: [
       {
-        name: "link",
+        name: "Link",
         link: "https://vasilissa.co.id",
         icon: <FaCode />,
       },
       {
-        name: "source",
+        name: "Source",
         link: null,
         icon: <GoLinkExternal />,
       },
@@ -230,12 +232,12 @@ export const projects = [
       "Website untuk memanage barang stok keluar / masuk, opname gudang, koreksi stok, mutasi stok",
     sources: [
       {
-        name: "link",
+        name: "Link",
         link: null,
         icon: <FaCode />,
       },
       {
-        name: "source",
+        name: "Source",
         link: null,
         icon: <GoLinkExternal />,
       },
@@ -260,6 +262,48 @@ export const projects = [
         name: "Bootstrap",
         color: "bg-violet-600",
         icon: "devicon-bootstrap-plain",
+      },
+    ],
+  },
+  {
+    name: "Lalasia",
+    image: [
+      {
+        source: lalasia1,
+      },
+      {
+        source: lalasia2,
+      },
+    ],
+    description:
+      "Website slicing menggunakan React Js dan Next Js, Dikerjakan oleh 4 orang dimana sama-sama belajar React Js",
+    sources: [
+      {
+        name: "Link",
+        link: "https://lalasia-nextjs.netlify.app/",
+        icon: <FaCode />,
+      },
+      {
+        name: "Source",
+        link: null,
+        icon: <GoLinkExternal />,
+      },
+    ],
+    stack: [
+      {
+        name: "ReactJs",
+        color: "bg-[#61dafb]",
+        icon: "devicon-react-original",
+      },
+      {
+        name: "NextJs",
+        color: "bg-slate-900",
+        icon: "devicon-nextjs-original",
+      },
+      {
+        name: "Tailwind",
+        color: "bg-sky-400",
+        icon: "devicon-tailwindcss-plain",
       },
     ],
   },

@@ -1,6 +1,25 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 const Home = () => {
+  useEffect(() => {
+    document.title = "Portfolio";
+  }, []);
+
+  const handleDownloadCV = () => {
+    // using Java Script method to get PDF file
+    fetch("cv.pdf").then((response) => {
+      response.blob().then((blob) => {
+        // Creating new object of PDF file
+        const fileURL = window.URL.createObjectURL(blob);
+        // Setting various property values
+        let alink = document.createElement("a");
+        alink.href = fileURL;
+        alink.download = "Akbar Imawan Dwi Cahya_CV.pdf";
+        alink.click();
+      });
+    });
+  };
+
   return (
     <div className="container">
       <div className="flex flex-wrap items-center text-center">
@@ -20,12 +39,12 @@ const Home = () => {
             Fullstack Web Developer
           </h2>
 
-          <a
-            href="#d"
+          <button
             className="text-base font-semibold mt-3 text-white bg-primary py-3 px-8 rounded-full hover:shadow-lg hover:opacity-80 transition duration-300 ease-in-out"
+            onClick={handleDownloadCV}
           >
             Download CV
-          </a>
+          </button>
         </div>
 
         <div className="w-full self-end px-4 lg:w-1/2">

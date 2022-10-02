@@ -1,3 +1,5 @@
+import { useEffect } from "react";
+
 import {
   FaWhatsapp,
   FaLinkedin,
@@ -6,6 +8,10 @@ import {
 } from "react-icons/fa";
 
 const Contact = () => {
+  useEffect(() => {
+    document.title = "Portfolio - Kontak";
+  }, []);
+
   const clickHandleWhatsapp = () => {
     window.open("https://wa.me/6283111693720", "_blank");
   };
@@ -26,9 +32,9 @@ const Contact = () => {
       <div className="container">
         <div className="py-3 mt-10">
           <h1 className="text-4xl text-center uppercase font-black text-dark tracking-wider">
-            Contact Me in
+            Kontak
           </h1>
-          <span className="block border border-b-dark w-1/3 lg:w-72 mx-auto"></span>
+          <span className="block border border-b-dark w-1/3 lg:w-[20%] mx-auto"></span>
         </div>
         <div className="container mt-12 flex flex-wrap gap-4 lg:justify-center lg:px-32 lg:py-10 lg:gap-16 lg:mt-8">
           <div
